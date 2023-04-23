@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mogakgongflutter/Screen/LoginPage.dart';
 import 'package:mogakgongflutter/Screen/homeScreen.dart';
 
 void main() {
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/': (context) => HomeScreen()
+        '/': (context) => HomeScreen(),
+        '/home':(context) => HomeScreen()
       },
     );
   }
