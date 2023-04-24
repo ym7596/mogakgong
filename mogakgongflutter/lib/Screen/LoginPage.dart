@@ -1,7 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mogakgongflutter/Constant/platforms.dart';
+import 'package:sign_in_button/sign_in_button.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -11,6 +12,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMixin {
+  LoginPlatform _loginPlatform = LoginPlatform.none;
   AnimationController? _animationController;
 
   Animation? _animation;
@@ -29,10 +31,10 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Center(
+      body:
+         Center(
           child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 AnimatedBuilder(
                   animation: _animationController!,
@@ -45,14 +47,28 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                   child: Icon(
                     Icons.punch_clock_rounded,
                     color: Colors.deepOrangeAccent,
-                    size: 80,
+                    size: 120,
                   ),
 
                 ),
+                SizedBox(
+                  height: 50,
+                    child: Text("MoGakGong",
+                    ),
+                ),
+                SizedBox(
+                  height: 50,
+                  width: 230,
+                  child: ElevatedButton(
+                    onPressed: (){},
+                    child: Image.asset('assets/images/Google.png'),
+                  )
+                )
+
               ]
           ),
         ),
-      ),
+
     );
   }
 }
