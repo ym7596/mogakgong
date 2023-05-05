@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mogakgongflutter/Screen/LoginPage.dart';
 import 'package:mogakgongflutter/Screen/homeScreen.dart';
-import 'package:kakao_flutter_sdk_common/kakao_flutter_sdk_common.dart';
 
+import 'package:kakao_flutter_sdk/kakao_flutter_sdk.dart';
 void main() {
   //Un1QJD84Al0/Mj8sfj9Ufw0K
   //hash 값

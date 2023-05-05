@@ -15,7 +15,18 @@
 	<key>CFBundleName</key>
 	<string>mogakgongflutter</string>
 	<key>CFBundlePackageType</key>
+
 	<string>APPL</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <!-- kakao login -->
+        <string>e36b911c89bdbce80bc30c00e3ee211e</string>
+      </array>
+      </dict>
+    </array>
 	<key>CFBundleShortVersionString</key>
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
